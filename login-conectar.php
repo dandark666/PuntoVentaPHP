@@ -4,7 +4,7 @@
         $password = $_POST['txtcontraseña'];
         //conexion con BD
         include('conexion/conexion.php');
-        //Consulta dentro de la BD encriptada 
+        //Consulta dentro de la BD encriptada con md5
         $sql = "SELECT * FROM Usuario WHERE Usuario = '$user' AND Clave = MD5($password)";
 
         $ejeSql = mysqli_query($conexion, $sql);
