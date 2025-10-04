@@ -90,7 +90,7 @@ session_start();
         </tr>
 
          <?php
-
+        //mostrar Marcas registradas en pantalla
         include("conexion/conexion.php");
         $consulta = "SELECT * FROM marca";
         #EJECUTAR LA CONSULTA
